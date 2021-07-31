@@ -8,31 +8,31 @@ public class Task1 {
 
     @Test (groups = {"regress,smokeTest"})
     public void homePageValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.homePageRefXpas(), redminePageForTask.homePageRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.homePageRefXpas(), redminePageForTask.homePageRefUrl());
     }
     @Test (groups = {"regress"})
     public void progectsValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.progectRefXpas(), redminePageForTask.progectRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.progectRefXpas(), redminePageForTask.progectRefUrl());
     }
     @Test (groups = {"regress,smokeTest"})
     public void helpValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.helpRefXpas(), redminePageForTask.helpRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.helpRefXpas(), redminePageForTask.helpRefUrl());
     }
     @Test (groups = {"smokeTest"})
     public void enterValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.enterRefXpas(), redminePageForTask.enterRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.enterRefXpas(), redminePageForTask.enterRefUrl());
     }
     @Test (groups = {"regress,smokeTest"})
     public void registrationsValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.regidtrationsRefXpas(), redminePageForTask.regidtrationsRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.regidtrationsRefXpas(), redminePageForTask.regidtrationsRefUrl());
     }
     @Test (groups = {"regress"})
     public void searchValidations(){
-        redmineObjForTask.validationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.searchRefXpas(), redminePageForTask.searchRefUrl());
+        redmineObjForTask.validationsOfReferences(redminePageForTask.searchRefXpas(), redminePageForTask.searchRefUrl());
     }
 
-    @Test (groups = {"regress,smokeTest"})
+    @Test (groups = {"regress,smokeTest"})  // эта часть в задании не требуется, могу удалить из функционала за ненадобностью, дописывал ее для собственного интереса
     public void allRefInOneTest(){
-        redmineObjForTask.allValidationsOfReferences(redminePageForTask.urlPage(), redminePageForTask.allRefXpas(), redminePageForTask.allRefUrl());
+        redmineObjForTask.allValidationsOfReferences(redminePageForTask.allRefXpas(), redminePageForTask.allRefUrl());
     }
 }

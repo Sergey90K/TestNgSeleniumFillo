@@ -42,6 +42,6 @@ public class Task3 {
     }
     @Test(dataProvider = "data-provider", groups = {"regress,smokeTest"})
     public void testMethod(String [] data){
-       redmineObjForTask.addValueInField(data,redminePageForTask.urlPage(), redminePageForTask.allFieldXpas(),redminePageForTask.okButton(),redminePageForTask.errorFild());
+       redmineObjForTask.addValueInField(data, redminePageForTask.allFieldXpas(),redminePageForTask.okButton(),redminePageForTask.errorFild());
     }
 }
